@@ -10,4 +10,12 @@ async function getQuote(url) {
     author.innerHTML = data.author;
 }
 
+function tweetQuote() {
+    const quoteText = encodeURIComponent(quote.innerHTML);
+    const authorText = encodeURIComponent(author.innerHTML);
+    const tweetUrl = `https://twitter.com/intent/tweet?text=${quoteText}%0A %0A- - - by ${authorText}`;
+    window.open(tweetUrl, "Tweet window", "height=500,width=700");
+}
+
+
 getQuote(api_url);
