@@ -8,7 +8,10 @@
 }
 
 body {
-    background: #bbc6fa;
+    background: linear-gradient(135deg, #52d28a, #2f51b0);
+    display: flex;
+    min-height: 100vh;
+
 }
 
 .quote-box {
@@ -22,6 +25,8 @@ body {
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #cacba9, #899bc9);
+
 }
 
 .quote-box h2 {
@@ -87,6 +92,8 @@ body {
     justify-content: center;
     margin: 5px;
     cursor: pointer;
+    font-size: 14px;
+    text-align: center;
 }
 
 .quote-box button img{
@@ -97,4 +104,9 @@ body {
 .quote-box button:nth-child(2) {
     background: transparent;
     color: #333;
+}
+
+.quote-box button:nth-child(2):hover {
+    background: rgb(23, 124, 229);
+    color: #fff;
 }
